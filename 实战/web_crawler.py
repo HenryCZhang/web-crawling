@@ -43,7 +43,7 @@ for page_num in range(1, 4):
     page_html = driver.page_source
     
      # Write the page HTML response to a file named pagenum_response.html
-    html_file_path = os.path.join(script_directory, f'{page_num}_response.html')
+    html_file_path = os.path.join(script_directory, f'page{page_num}_response.html')
     with open(html_file_path, 'w', encoding='utf-8') as file:
         file.write(page_html)
     
